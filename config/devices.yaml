@@ -1,13 +1,12 @@
 - name: Module_A3
-  company: Razumdom
-  model: DRM88R
+  model: Razumdom_DRM88R
   description: Управление оборудованием 230V
   modbus:
     unit_id: 3
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Доп. свет в гостиной
       2: Доп. свет на кухне
@@ -21,7 +20,7 @@
       10: None
       11: None
       12: None
-    input_registers:
+    discrete_inputs:
       1: Выключатель доп. света в гостинной
       2: Выключатель доп. света на кухне
       3: Выключатель вентиляции в санузле
@@ -34,18 +33,17 @@
     1: None
 
 - name: Module_A4
-  company: Razumdom
-  model: DRM21R
+  model: Razumdom_DRM21R
   description: Управление питанием кондиционера в прихожей
   modbus:
     unit_id: 4
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Кондиционер
-    input_registers:
+    discrete_inputs:
       1: None
       2: None
       3: None
@@ -54,18 +52,17 @@
     1: None
 
 - name: Module_A5
-  company: Razumdom
-  model: DRM21R
+  model: Razumdom_DRM21R
   description: Управление питанием кондиционера в гостинной
   modbus:
     unit_id: 5
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Кондиционер
-    input_registers:
+    discrete_inputs:
       1: None
       2: None
       3: None
@@ -74,18 +71,17 @@
     1: None
 
 - name: Module_A6
-  company: Razumdom
-  model: DRM21R
+  model: Razumdom_DRM21R
   description: Управление питанием бойлера
   modbus:
     unit_id: 6
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Бойлер
-    input_registers:
+    discrete_inputs:
       1: None
       2: None
       3: None
@@ -94,15 +90,14 @@
     1: None
 
 - name: Module_A8
-  company: Razumdom
-  model: DRM88R
+  model: Razumdom_DRM88R
   description: Управление оборудованием 24V
   modbus:
     unit_id: 8
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Освещение Прихожая
       2: Rezerv
@@ -116,7 +111,7 @@
       10: Запуск G4
       11: Запуск G5
       12: None
-    input_registers:
+    discrete_inputs:
       1: Выключатель освещения в прихожей
       2: Rezerv
       3: Выключатель освещения на кухне
@@ -129,21 +124,20 @@
     1: None
 
 - name: Module_A9
-  company: Razumdom
-  model: DDL88R
+  model: Razumdom_DDL88R
   description: Диммер подсветки в прихожей и предбаннике
   modbus:
     unit_id: 9
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Прихожая R
       2: Прихожая G
       3: Прихожая B
       4: Предбанник W
-    input_registers:
+    discrete_inputs:
       1: Выключатель подсветки в прихожей
       2: Выключатель освещения в предбаннике
       3: None
@@ -156,21 +150,20 @@
     1: None
 
 - name: Module_A10
-  company: Razumdom
-  model: DDL88R
+  model: Razumdom_DDL88R
   description: Диммер подсветки кухонного гарнитура
   modbus:
     unit_id: 10
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Гарнитур R
       2: Гарнитур G
       3: Гарнитур B
       4: Гарнитур W
-    inputs:
+    discrete_inputs:
       1: Выключатель подсветки кухонного гарнитура
       2: None
       3: None
@@ -183,21 +176,20 @@
     1: None
 
 - name: Module_A11
-  company: Razumdom
-  model: DDL88R
+  model: Razumdom_DDL88R
   description: Диммер подсветки в детской
   modbus:
     unit_id: 11
     baud_rate: 115200
-    data_bit: 8
+    data_bits: 8
     parity: None
-    stop_bit: 1
+    stop_bits: 1
     coils:
       1: Детская R
       2: Детская G
       3: Детская B
       4: Детская W
-    inputs:
+    discrete_inputs:
       1: Выключатель подсветки в детской
       2: None
       3: None

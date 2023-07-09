@@ -2,13 +2,19 @@ from config.setting import CLIENTS, DEVICES
 from src.models.TcpClient import TcpClient
 from utils import get_data
 
+# Чтение данных из YML файлов
 clients: list = get_data(CLIENTS)
-devices = get_data(DEVICES)
+devices: list = get_data(DEVICES)
 
-client = TcpClient(**clients[0])
-print(client)
+# Создаем новый клиент и добавляем в него устройства
+tcp_client = TcpClient(**clients[0])
+[tcp_client.add_devise(devices[i]) for i in range(len(devices))]
 
-print(devices)
+# Выбираем устройство
+device = tcp_client.devices[0]
+
+print(tcp_client)
+print(device)
 
 # try:
 #     client: ModbusClient = ModbusClient(host='192.168.3.9', port=502, unit_id=2, debug=True)
