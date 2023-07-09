@@ -1,0 +1,210 @@
+Module_A3:
+  company: Razumdom
+  model: DRM88R
+  description: Управление оборудованием 230V
+  modbus:
+    unit_id: 3
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Доп. свет в гостиной
+      2: Доп. свет на кухне
+      3: Вентиляция санузел
+      4: Вентиляция ЩСУ
+      5: G3
+      6: G4
+      7: G5
+      8: G6
+      9: None
+      10: None
+      11: None
+      12: None
+    input_registers:
+      1: Выключатель доп. света в гостинной
+      2: Выключатель доп. света на кухне
+      3: Выключатель вентиляции в санузле
+      4: None
+      5: Запуск G3
+      6: Запуск G4
+      7: Запуск G5
+      8: None
+  rd_scenarios:
+    1: None
+
+Module_A4:
+  company: Razumdom
+  model: DRM21R
+  description: Управление питанием кондиционера в прихожей
+  modbus:
+    unit_id: 4
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Кондиционер
+    input_registers:
+      1: None
+      2: None
+      3: None
+      4: None
+  rd_scenarios:
+    1: None
+
+Module_A5:
+  company: Razumdom
+  model: DRM21R
+  description: Управление питанием кондиционера в гостинной
+  modbus:
+    unit_id: 5
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Кондиционер
+    input_registers:
+      1: None
+      2: None
+      3: None
+      4: None
+  rd_scenarios:
+    1: None
+
+Module_A6:
+  company: Razumdom
+  model: DRM21R
+  description: Управление питанием бойлера
+  modbus:
+    unit_id: 6
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Бойлер
+    input_registers:
+      1: None
+      2: None
+      3: None
+      4: None
+  rd_scenarios:
+    1: None
+
+Module_A8:
+  company: Razumdom
+  model: DRM88R
+  description: Управление оборудованием 24V
+  modbus:
+    unit_id: 8
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Освещение Прихожая
+      2: Rezerv
+      3: Освещение Кухня
+      4: Освещение Гостиная
+      5: Освещение Спальня
+      6: Освещение Детская
+      7: Освещение Туалет
+      8: Освещение Ванна
+      9: Запуск G3
+      10: Запуск G4
+      11: Запуск G5
+      12: None
+    input_registers:
+      1: Выключатель освещения в прихожей
+      2: Rezerv
+      3: Выключатель освещения на кухне
+      4: Выключатель освещения в гостинной
+      5: Выключатель освещения в спальне
+      6: Выключатель освещения в детской
+      7: Выключатель освещения в туалете
+      8: Выключатель освещения в ванной
+  rd_scenarios:
+    1: None
+
+Module_A9:
+  company: Razumdom
+  model: DDL88R
+  description: Диммер подсветки в прихожей и предбаннике
+  modbus:
+    unit_id: 9
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Прихожая R
+      2: Прихожая G
+      3: Прихожая B
+      4: Предбанник W
+    input_registers:
+      1: Выключатель подсветки в прихожей
+      2: Выключатель освещения в предбаннике
+      3: None
+      4: None
+      5: None
+      6: None
+      7: None
+      8: None
+  rd_scenarios:
+    1: None
+
+Module_A10:
+  company: Razumdom
+  model: DDL88R
+  description: Диммер подсветки кухонного гарнитура
+  modbus:
+    unit_id: 10
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Гарнитур R
+      2: Гарнитур G
+      3: Гарнитур B
+      4: Гарнитур W
+    inputs:
+      1: Выключатель подсветки кухонного гарнитура
+      2: None
+      3: None
+      4: None
+      5: None
+      6: None
+      7: None
+      8: None
+  rd_scenarios:
+    1: None
+
+Module_A11:
+  company: Razumdom
+  model: DDL88R
+  description: Диммер подсветки в детской
+  modbus:
+    unit_id: 11
+    baud_rate: 115200
+    data_bit: 8
+    parity: None
+    stop_bit: 1
+    coils:
+      1: Детская R
+      2: Детская G
+      3: Детская B
+      4: Детская W
+    inputs:
+      1: Выключатель подсветки в детской
+      2: None
+      3: None
+      4: None
+      5: None
+      6: None
+      7: None
+      8: None
+  rd_scenarios:
+    1: None
