@@ -13,6 +13,7 @@ class Device:
         self.holding_registers = kwargs.get('modbus').get('holding_registers')
         self.input_registers = kwargs.get('modbus').get('input_registers')
         if 'razumdom' in self.name.lower():
+            self.rd_reboot = 5678
             self.rd_scenarios = kwargs.get('razumdom').get('rd_scenarios')
 
     def coil(self, coil):

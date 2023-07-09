@@ -1,3 +1,7 @@
 - name: modbus_slave
   ip: 192.168.3.9
   port: 502
+
+- name: USR-DR302_Test
+  ip: 192.168.3.8
+  port: 502
