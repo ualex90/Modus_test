@@ -9,9 +9,9 @@ class Device:
         self.parity = kwargs.get('modbus').get('parity')
         self.stop_bits = int(kwargs.get('modbus').get('stop_bits'))
         self.coils = kwargs.get('modbus').get('coils')
-        self.discrete_inputs = kwargs.get('modbus').get('discrete_inputs')
-        self.holding_registers = kwargs.get('modbus').get('holding_registers')
-        self.input_registers = kwargs.get('modbus').get('input_registers')
+        self.di = kwargs.get('modbus').get('discrete_inputs')
+        self.hr = kwargs.get('modbus').get('holding_registers')
+        self.ir = kwargs.get('modbus').get('input_registers')
         if 'razumdom' in self.name.lower():
             self.rd_reboot = 5678
             self.rd_scenarios = kwargs.get('razumdom').get('rd_scenarios')

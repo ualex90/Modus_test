@@ -18,13 +18,13 @@ def main():
         hr = [hex(i) for i in client.read_holding_registers(0, 2)]
 
         # Read input registers
-        ir = client.read_input_registers(1, 8)
+        ir = client.read_input_registers(1, len(device.ir)) if device.ir else None
 
         # Read discrete inputs
-        di = [int(i) for i in client.read_discrete_inputs(1, 8)]
+        di = [int(i) for i in client.read_discrete_inputs(1, len(device.di))] if device.di else None
 
         # Read coils
-        coils = [int(i) for i in client.read_coils(1, 12)]
+        coils = [int(i) for i in client.read_coils(1, len(device.coils))] if device.coils else None
 
         # # Write single register
         # client.write_single_register(1, int('0x104', 16))
