@@ -13,11 +13,36 @@ def main():
     print(device)
 
     try:
-        client: ModbusClient = ModbusClient(host=tcp_client.ip, port=tcp_client.port, unit_id=device.unit_id, debug=True)
-        # client.write_single_register(0, 255)
-        x = [hex(i) for i in client.read_holding_registers(0, 9)]
-        client.write_single_register(1, int('0x104', 16))
-        print(x)
+        client: ModbusClient = ModbusClient(host=tcp_client.ip, port=tcp_client.port, unit_id=device.unit_id)
+        # Read holding registers
+        hr = [hex(i) for i in client.read_holding_registers(0, 2)]
+
+        # Read input registers
+        ir = client.read_input_registers(1, 8)
+
+        # Read discrete inputs
+        di = [int(i) for i in client.read_discrete_inputs(1, 8)]
+
+        # Read coils
+        coils = [int(i) for i in client.read_coils(1, 12)]
+
+        # # Write single register
+        # client.write_single_register(1, int('0x104', 16))
+
+        # # Write multiple registers
+        # client.write_multiple_registers(0, [int('0x3', 16), int('0x104', 16)])
+
+        # # Write single coil
+        # client.write_single_coil(1, False)
+
+        # # Write multiple coils
+        # client.write_multiple_coils(1, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+
+        print('\nHolding Registers:', hr)
+        print('Input Registers:', ir)
+        print('Discrete Inputs:', di)
+        print('Coils:', coils)
+
         client.close()
     except ValueError:
         print("No Modbus server found")
