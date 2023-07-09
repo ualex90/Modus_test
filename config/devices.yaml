@@ -1,4 +1,4 @@
-Module_A3:
+- name: Module_A3
   company: Razumdom
   model: DRM88R
   description: Управление оборудованием 230V
@@ -33,7 +33,7 @@ Module_A3:
   rd_scenarios:
     1: None
 
-Module_A4:
+- name: Module_A4
   company: Razumdom
   model: DRM21R
   description: Управление питанием кондиционера в прихожей
@@ -53,7 +53,7 @@ Module_A4:
   rd_scenarios:
     1: None
 
-Module_A5:
+- name: Module_A5
   company: Razumdom
   model: DRM21R
   description: Управление питанием кондиционера в гостинной
@@ -73,7 +73,7 @@ Module_A5:
   rd_scenarios:
     1: None
 
-Module_A6:
+- name: Module_A6
   company: Razumdom
   model: DRM21R
   description: Управление питанием бойлера
@@ -93,7 +93,7 @@ Module_A6:
   rd_scenarios:
     1: None
 
-Module_A8:
+- name: Module_A8
   company: Razumdom
   model: DRM88R
   description: Управление оборудованием 24V
@@ -128,7 +128,7 @@ Module_A8:
   rd_scenarios:
     1: None
 
-Module_A9:
+- name: Module_A9
   company: Razumdom
   model: DDL88R
   description: Диммер подсветки в прихожей и предбаннике
@@ -155,7 +155,7 @@ Module_A9:
   rd_scenarios:
     1: None
 
-Module_A10:
+- name: Module_A10
   company: Razumdom
   model: DDL88R
   description: Диммер подсветки кухонного гарнитура
@@ -182,7 +182,7 @@ Module_A10:
   rd_scenarios:
     1: None
 
-Module_A11:
+- name: Module_A11
   company: Razumdom
   model: DDL88R
   description: Диммер подсветки в детской
