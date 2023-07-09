@@ -5,7 +5,7 @@ class TcpClient:
     def __init__(self, **kwargs):
         self.name = kwargs.get('name') or 'localhost'
         self.ip = kwargs.get('ip') or '127.0.0.1'
-        self.port = kwargs.get('ip') or '502'
+        self.port = int(kwargs.get('port')) or 502
         self.devices = list()
         self.devices_list = list()
 
