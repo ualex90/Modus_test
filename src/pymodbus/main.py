@@ -1,4 +1,4 @@
-from pymodbus.client import ModbusTcpClient
+from src.pymodbus import ModbusTcpClient
 
 client = ModbusTcpClient(host='192.168.3.9', port=502)
 client.connect()

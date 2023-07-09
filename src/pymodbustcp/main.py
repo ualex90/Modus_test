@@ -1,10 +1,9 @@
-from pyModbusTCP.client import ModbusClient
-
-from setting import CLIENTS
+from config.setting import CLIENTS
+from src.models.Client import Client
 from utils import get_data
 
 clients = get_data(CLIENTS)
-client = Client()
+# client = Client()
 print(clients)
 
 # try:
